@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+      <profile name="Annotation profile for xiaohongshu-search-biz" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../developTool/Maven/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="xiaohongshu-auth" />
+        <module name="xiaohongshu-search-biz" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17">
+      <module name="xiaohongshu-common" target="17" />
+      <module name="xiaohongshu-count" target="17" />
+      <module name="xiaohongshu-count-api" target="17" />
+      <module name="xiaohongshu-count-biz" target="17" />
+      <module name="xiaohongshu-data-align" target="17" />
+      <module name="xiaohongshu-distributed-id-generator" target="17" />
+      <module name="xiaohongshu-distributed-id-generator-api" target="17" />
+      <module name="xiaohongshu-distributed-id-generator-biz" target="17" />
+      <module name="xiaohongshu-framework" target="17" />
+      <module name="xiaohongshu-gateway" target="17" />
+      <module name="xiaohongshu-kv" target="17" />
+      <module name="xiaohongshu-kv-api" target="17" />
+      <module name="xiaohongshu-kv-biz" target="17" />
+      <module name="xiaohongshu-note" target="17" />
+      <module name="xiaohongshu-note-api" target="17" />
+      <module name="xiaohongshu-note-biz" target="17" />
+      <module name="xiaohongshu-oss" target="17" />
+      <module name="xiaohongshu-oss-api" target="17" />
+      <module name="xiaohongshu-oss-biz" target="17" />
+      <module name="xiaohongshu-search" target="17" />
+      <module name="xiaohongshu-search-api" target="17" />
+      <module name="xiaohongshu-spring-boot-starter-biz-context" target="17" />
+      <module name="xiaohongshu-spring-boot-starter-biz-operationlog" target="17" />
+      <module name="xiaohongshu-spring-boot-starter-jackson" target="17" />
+      <module name="xiaohongshu-user" target="17" />
+      <module name="xiaohongshu-user-api" target="17" />
+      <module name="xiaohongshu-user-biz" target="17" />
+      <module name="xiaohongshu-user-relation" target="17" />
+      <module name="xiaohongshu-user-relation-api" target="17" />
+      <module name="xiaohongshu-user-relation-biz" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

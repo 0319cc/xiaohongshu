@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lishuwang.xiaohongshu.data.align.domain.mapper.DeleteMapper">
+
+    <delete id="batchDeleteDataAlignFollowingCountTempTable" parameterType="list">
+        delete from `t_data_align_following_count_temp_${tableNameSuffix}`
+        where user_id in
+        <foreach collection="userIds" open="(" item="userId" close=")" separator=",">
+            #{userId}
+        </foreach>
+    </delete>
+
+    <delete id="batchDeleteDataAlignNoteLikeCountTempTable" parameterType="list">
+        delete from `t_data_align_note_like_count_temp_${tableNameSuffix}`
+        where note_id in
+        <foreach collection="noteIds" open="(" item="noteId" close=")" separator=",">
+            #{noteId}
+        </foreach>
+    </delete>
+</mapper>
